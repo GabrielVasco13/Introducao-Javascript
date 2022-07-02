@@ -1,5 +1,4 @@
 const titulo = document.querySelector(".titulo")
-titulo.textContent = 'Aparecida Nutricionista';
 
 let pacientes = document.querySelectorAll(".paciente");
 
@@ -39,6 +38,7 @@ for(var i = 0; i < pacientes.length; i++) {
 }
 
 const botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function() {
-    console.log("ação executada")
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("ação feita")
 })
